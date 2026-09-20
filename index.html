@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="जीवन मार्ग - यीशु मसीह में जीवन का मार्ग। परमेश्वर के प्रेम, क्षमा और उद्धार को जानिए।">
+    <title>Jeevan Marg - जीवन मार्ग</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-forest selection:text-white">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress"></div>
+
+    <!-- FLOATING GLASS NAV -->
+    <div class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+        <nav id="mainNav" class="glass-nav rounded-full px-6 py-3 md:px-8 md:py-4 flex items-center justify-between w-full max-w-3xl pointer-events-auto transition-all duration-300">
+            <a href="#top" class="text-xl md:text-2xl font-bold text-forest flex items-center gap-2">
+                <i class="ph-fill ph-dove text-sage"></i>
+                जीवन मार्ग
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-forest/80">
+                <a href="#about" class="hover:text-forest transition-colors">येशु के बारे में</a>
+                <a href="#gospel" class="hover:text-forest transition-colors">सुसमाचार</a>
+                <a href="#verses" class="hover:text-forest transition-colors">बाइबल वचन</a>
+                <a href="#prayer" class="hover:text-forest transition-colors">प्रार्थना</a>
+            </div>
+            <button id="menuToggle" aria-label="Toggle Menu" class="md:hidden text-forest p-1">
+                <i class="ph ph-list text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobileMenu" class="hidden absolute top-24 left-1/2 -translate-x-1/2 w-[90%] max-w-sm glass rounded-3xl p-6 md:hidden pointer-events-auto">
+            <div class="flex flex-col gap-4 text-forest font-medium">
+                <a href="#about" class="hover:text-sage transition-colors">येशु के बारे में</a>
+                <a href="#gospel" class="hover:text-sage transition-colors">सुसमाचार</a>
+                <a href="#verses" class="hover:text-sage transition-colors">बाइबल वचन</a>
+                <a href="#prayer" class="hover:text-sage transition-colors">प्रार्थना</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE CONTENT WRAPPER (for curtain footer) ==================== -->
+    <div class="page-content">
+
+        <!-- 1. HERO -->
+        <section id="top" class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-gradient-to-b from-mint/40 via-cream to-cream">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-sage/40 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob"></div>
+            <div class="absolute top-20 right-0 w-96 h-96 bg-beige rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+            <div class="absolute bottom-0 left-1/3 w-72 h-72 bg-mint rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob animation-delay-4000"></div>
+
+            <div class="container mx-auto px-6 max-w-6xl relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <span class="inline-block py-1 px-3 rounded-full glass text-sm font-medium text-forest mb-6 border border-white">यीशु मसीह में जीवन का मार्ग</span>
+                        <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6 text-forest">
+                            “मैं <span class="gradient-text">मार्ग, सत्य</span> और <span class="gradient-text">जीवन</span> हूँ।”
+                        </h1>
+                        <p class="text-lg md:text-xl text-forest/70 mb-8 font-light italic border-l-4 border-sage pl-4">— यूहन्ना 14:6</p>
+                        <p class="text-lg text-forest/80 mb-10 leading-relaxed max-w-lg">
+                            परमेश्वर आपको जानता है, आपसे प्रेम करता है और आपके जीवन के लिए आशा और एक उद्देश्य रखता है। यीशु मसीह के माध्यम से परमेश्वर के प्रेम, क्षमा और उद्धार को जानिए।
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#about" class="bg-forest text-white px-8 py-4 rounded-full font-medium hover:bg-forest/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">यीशु के बारे में जानें</a>
+                            <a href="#message" class="glass px-8 py-4 rounded-full font-medium text-forest hover:bg-white/80 transition-all shadow-sm hover:shadow-md hover:-translate-y-1">आज का संदेश पढ़ें</a>
+                        </div>
+                    </div>
+                    <div class="relative" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="aspect-[4/5] md:aspect-square relative z-10 rounded-blob overflow-hidden shadow-2xl blob-img border-8 border-white/60">
+                            <img src="images/jesus-hero.png" alt="Hope sunrise" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 glass p-6 rounded-3xl z-20 shadow-xl max-w-xs animate-float">
+                            <i class="ph-fill ph-sparkle text-sage text-3xl mb-2"></i>
+                            <p class="font-medium text-sm text-forest">एक नई शुरुआत आपका इंतज़ार कर रही है।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. IMPORTANT QUESTION -->
+        <section id="about" class="py-24 bg-cream">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-forest" data-aos="fade-up">क्या आपने कभी सोचा है कि जीवन का उद्देश्य क्या है?</h2>
+                <p class="text-lg text-forest/70 mb-12" data-aos="fade-up" data-aos-delay="100">
+                    जीवन में हम सफलता, खुशी, धन, सम्मान और सुरक्षा की खोज करते हैं। फिर भी हमारे हृदय में ऐसे प्रश्न रहते हैं जिनका उत्तर केवल संसार की चीज़ों से नहीं मिलता।
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+                    <div class="bg-mint p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow" data-aos="zoom-in" data-aos-delay="200"><p class="font-medium text-forest">मैं कौन हूँ?</p></div>
+                    <div class="bg-beige p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow" data-aos="zoom-in" data-aos-delay="300"><p class="font-medium text-forest">मैं यहाँ क्यों हूँ?</p></div>
+                    <div class="bg-sage/60 p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow" data-aos="zoom-in" data-aos-delay="400"><p class="font-medium text-forest">मृत्यु के बाद क्या है?</p></div>
+                    <div class="bg-beige/70 p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow md:col-span-1 col-span-2" data-aos="zoom-in" data-aos-delay="500"><p class="font-medium text-forest">क्या परमेश्वर मुझे जानता है?</p></div>
+                    <div class="glass p-6 rounded-3xl shadow-sm border border-white hover:shadow-md transition-shadow md:col-span-2 col-span-2" data-aos="zoom-in" data-aos-delay="600"><p class="font-medium text-forest">क्या मेरे पाप क्षमा हो सकते हैं?</p></div>
+                </div>
+                <p class="text-xl font-medium text-forest" data-aos="fade-up">बाइबल इन प्रश्नों को गंभीरता से लेती है और हमें परमेश्वर की ओर देखने के लिए बुलाती है।</p>
+            </div>
+        </section>
+
+        <!-- ⭐ MOST IMPORTANT: SALVATION IN CHRIST (SLOW SCROLL ZONE) ⭐ -->
+        <section id="core-message" class="py-28 relative overflow-hidden bg-gradient-to-b from-cream to-mint/30">
+            <div class="container mx-auto px-6 max-w-5xl relative z-10">
+                <div class="bg-forest p-8 md:p-16 rounded-[3rem] shadow-[0_25px_60px_-15px_rgba(62,95,85,0.4)] border border-forest/50 relative overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-mint/15 rounded-full blur-[120px] pointer-events-none"></div>
+                    <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-sage/15 rounded-full blur-[100px] pointer-events-none"></div>
+                    <div class="absolute top-1/2 left-0 w-[300px] h-[300px] bg-beige/10 rounded-full blur-[80px] pointer-events-none"></div>
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-mint/60 to-transparent"></div>
+
+                    <div class="text-center mb-12 relative z-10">
+                        <i class="ph-fill ph-cross text-5xl text-mint mb-6 drop-shadow-[0_0_15px_rgba(205,235,214,0.5)]"></i>
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">उद्धार केवल <span class="text-mint">यीशु मसीह</span> के द्वारा</h2>
+                        <div class="w-24 h-1 bg-sage/50 mx-auto rounded-full"></div>
+                    </div>
+
+                    <div class="text-cream/90 text-lg md:text-xl leading-relaxed space-y-6 text-center max-w-3xl mx-auto relative z-10">
+                        <p>मनुष्य अपने पापों के कारण परमेश्वर से दूर हो गया। लेकिन परमेश्वर ने हमें नहीं छोड़ा। उन्होंने हमारे उद्धार के लिए यीशु मसीह को भेजा।</p>
+                        <p>यीशु हमारे पापों के लिए क्रूस पर मरे और पुनरुत्थित हुए। उनके द्वारा हमारे लिए पापों की क्षमा, परमेश्वर के साथ मेल-मिलाप और नए जीवन का मार्ग खोल दिया गया।</p>
+                    </div>
+
+                    <div class="my-12 p-8 md:p-10 bg-mint/10 rounded-[2rem] border border-mint/20 relative max-w-3xl mx-auto relative z-10" data-aos="fade-up" data-aos-delay="200">
+                        <i class="ph-fill ph-quotes text-mint/40 text-4xl absolute top-4 left-6"></i>
+                        <p class="font-serif italic text-2xl md:text-3xl text-mint text-center leading-snug relative z-10">“मैं मार्ग, सत्य और जीवन हूँ। मेरे द्वारा बिना कोई पिता के पास नहीं पहुँच सकता।”</p>
+                        <p class="text-base font-sans font-bold text-center text-cream/70 mt-6 tracking-widest uppercase">— यूहन्ना 14:6</p>
+                    </div>
+
+                    <p class="text-cream/90 text-lg md:text-xl leading-relaxed text-center max-w-3xl mx-auto mb-16 relative z-10">
+                        पवित्र बाइबल सिखाती है कि सच्चा उद्धार केवल यीशु मसीह में है। यीशु ही प्रभु और परमेश्वर हैं, और प्रत्येक व्यक्ति को उनके प्रेम, अनुग्रह और उद्धार को स्वीकार करने के लिए आमंत्रित किया गया है।
+                    </p>
+
+                    <div class="grid md:grid-cols-3 gap-6 relative z-10">
+                        <div class="bg-white/5 border border-mint/20 rounded-3xl p-8 text-center hover:bg-mint/10 hover:border-mint/40 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                            <div class="w-16 h-16 bg-mint/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="ph-fill ph-cross text-3xl text-mint"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">यीशु को जानिए।</h3>
+                            <p class="text-mint/80 text-sm">उनके जीवन, मृत्यु और पुनरुत्थान को समझिए।</p>
+                        </div>
+                        <div class="bg-white/5 border border-mint/20 rounded-3xl p-8 text-center hover:bg-mint/10 hover:border-mint/40 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                            <div class="w-16 h-16 bg-mint/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="ph-fill ph-heart text-3xl text-mint"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">उन पर विश्वास कीजिए।</h3>
+                            <p class="text-mint/80 text-sm">अपने पापों को मानकर उनके अनुग्रह को स्वीकार कीजिए।</p>
+                        </div>
+                        <div class="bg-white/5 border border-mint/20 rounded-3xl p-8 text-center hover:bg-mint/10 hover:border-mint/40 transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+                            <div class="w-16 h-16 bg-mint/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="ph-fill ph-sparkle text-3xl text-mint"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">उनमें नया जीवन पाइए।</h3>
+                            <p class="text-mint/80 text-sm">परमेश्वर के साथ एक नया संबंध और अनन्त जीवन का आश्वासन।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROBLEM & 4. LOVE -->
+        <section class="py-24 bg-mint/40 relative overflow-hidden">
+            <div class="absolute right-0 top-0 w-64 h-64 bg-white/40 rounded-full blur-3xl"></div>
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="glass p-10 rounded-[2.5rem] relative z-10" data-aos="fade-right">
+                        <span class="text-sm font-bold text-forest/50 uppercase tracking-widest mb-2 block">मनुष्य की वास्तविक समस्या</span>
+                        <h3 class="text-3xl font-bold mb-4 text-forest">पाप हमें परमेश्वर से दूर करता है</h3>
+                        <p class="text-forest/80 mb-6">बाइबल सिखाती है कि हर मनुष्य ने पाप किया है और कोई भी अपने बल पर पूर्णतः धर्मी नहीं है।</p>
+                        <blockquote class="border-l-4 border-sage pl-4 mb-6 italic text-forest/70 bg-white/40 py-2 pr-2 rounded-r-lg">
+                            “सबने पाप किया है और परमेश्वर की महिमा से रहित हैं।”<br>
+                            <span class="text-sm font-bold mt-1 block text-forest">— रोमियों 3:23</span>
+                        </blockquote>
+                        <p class="text-forest/80 text-sm">
+                            हमारी गलतियाँ केवल हमारे व्यवहार को प्रभावित नहीं करतीं; पाप हमें परमेश्वर से अलग करता है। अपने अच्छे कामों, धार्मिक कर्मों या अपनी शक्ति के द्वारा हम इस दूरी को पूरी तरह समाप्त नहीं कर सकते।<br><br>
+                            <strong class="text-forest">लेकिन कहानी यहीं समाप्त नहीं होती।</strong>
+                        </p>
+                    </div>
+                    <div data-aos="fade-left">
+                        <div class="relative w-full rounded-[4rem] bg-beige/70 flex items-center justify-center p-10 md:p-14 shadow-inner">
+                            <div class="absolute inset-0 border border-white/60 rounded-[4rem] scale-95"></div>
+                            <div class="text-center z-10">
+                                <i class="ph-fill ph-heart text-5xl text-forest mb-4"></i>
+                                <h3 class="text-3xl font-bold mb-4 text-forest">परमेश्वर का प्रेम</h3>
+                                <p class="text-forest/80 mb-4 font-medium">परमेश्वर ने हमें छोड़ा नहीं</p>
+                                <p class="text-forest/70 text-sm mb-6">मनुष्य पाप में गिर गया, फिर भी परमेश्वर का प्रेम समाप्त नहीं हुआ।</p>
+                                <p class="text-lg font-serif italic text-forest">
+                                    “परमेश्वर ने जगत से ऐसा प्रेम किया कि उसने अपना एकलौता पुत्र दे दिया...”<br>
+                                    <span class="text-sm font-sans font-bold not-italic mt-2 block">— यूहन्ना 3:16</span>
+                                </p>
+                                <p class="text-forest/70 text-sm mt-6">
+                                    परमेश्वर ने यीशु मसीह को हमारे लिए भेजा। यीशु हमारे पापों के कारण क्रूस पर मरे और पुनरुत्थित हुए। उनके द्वारा परमेश्वर ने हमारे लिए क्षमा, मेल-मिलाप और नए जीवन का मार्ग खोला।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CROSS & 6. NEW LIFE -->
+        <section id="gospel" class="py-24 bg-cream relative">
+            <div class="container mx-auto px-6 max-w-5xl text-center">
+                <div class="mb-20" data-aos="fade-up">
+                    <i class="ph ph-cross text-5xl text-sage mb-6 mx-auto"></i>
+                    <h2 class="text-4xl font-bold mb-4 text-forest">क्रूस का संदेश</h2>
+                    <h3 class="text-xl text-forest/60 mb-8">यीशु ने हमारे लिए अपना जीवन दिया</h3>
+                    <p class="text-forest/80 max-w-2xl mx-auto mb-8 text-lg">
+                        जब हम परमेश्वर से दूर थे, तब भी मसीह ने हमारे लिए अपने प्राण दिए। क्रूस केवल दुःख का चिन्ह नहीं है। यह परमेश्वर के प्रेम, न्याय, क्षमा और उद्धार का संदेश है। यीशु ने वह कीमत चुकाई जिसे हम स्वयं नहीं चुका सकते थे।
+                    </p>
+                    <div class="inline-block glass px-8 py-4 rounded-2xl shadow-sm">
+                        <p class="italic text-forest font-medium">“वह हमारे अपराधों के कारण घायल किया गया और हमारे अधर्म के कारण कुचला गया।”</p>
+                        <p class="text-sm font-bold text-forest/60 mt-2">— यशायाह 53:5</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-[3rem] p-10 md:p-16 shadow-[0_20px_50px_-12px_rgba(62,95,85,0.12)] border border-sage/20 relative overflow-hidden" data-aos="fade-up">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-mint rounded-full filter blur-3xl opacity-60 -z-10 translate-x-1/2 -translate-y-1/2"></div>
+                    <h2 class="text-3xl font-bold mb-2 text-forest">यीशु में नया जीवन</h2>
+                    <p class="text-forest/60 mb-10">मसीह केवल आपके अतीत को नहीं बदलते</p>
+                    <p class="text-lg text-forest/80 mb-8 max-w-2xl mx-auto">यीशु हमें केवल हमारे पापों से क्षमा प्राप्त करने के लिए नहीं बुलाते, बल्कि एक नए जीवन के लिए बुलाते हैं।</p>
+                    <p class="text-xl font-medium text-forest mb-12">“जो मसीह में है, वह नई सृष्टि है।” — 2 कुरिन्थियों 5:17</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="px-6 py-3 bg-mint text-forest rounded-full font-medium shadow-sm cursor-default">क्षमा</span>
+                        <span class="px-6 py-3 bg-beige text-forest rounded-full font-medium shadow-sm cursor-default">आशा</span>
+                        <span class="px-6 py-3 bg-sage/50 text-forest rounded-full font-medium shadow-sm cursor-default">शांति</span>
+                        <span class="px-6 py-3 bg-mint/70 text-forest rounded-full font-medium shadow-sm cursor-default">नई शुरुआत</span>
+                        <span class="px-6 py-3 glass text-forest rounded-full font-medium shadow-sm border border-sage/30 cursor-default">परमेश्वर के साथ संबंध</span>
+                        <span class="px-6 py-3 bg-forest text-white rounded-full font-medium shadow-sm cursor-default">अन्त जीवन की आशा</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7 & 8. SALVATION & INVITATION -->
+        <section class="py-24 bg-beige/50 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1447014421976-7fec21d26d86?auto=format&fit=crop&q=80" alt="Soft light overlay" class="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-overlay pointer-events-none">
+            <div class="container mx-auto px-6 max-w-6xl relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <div data-aos="fade-right">
+                        <h2 class="text-4xl font-bold mb-4 text-forest">उद्धार कैसे प्राप्त करें?</h2>
+                        <p class="text-xl text-forest/60 mb-8 font-light">परमेश्वर के पास लौटने का निमंत्रण</p>
+                        <div class="space-y-6 text-forest/80 mb-10">
+                            <p class="flex gap-4 items-start"><i class="ph-fill ph-check-circle text-forest text-2xl mt-1"></i><span>उद्धार हमारी अपनी योग्यता से प्राप्त होने वाली वस्तु नहीं है। यह परमेश्वर का अनुग्रह है, जिसे विश्वास के साथ स्वीकार किया जाता है।</span></p>
+                            <p class="flex gap-4 items-start"><i class="ph-fill ph-book-open-text text-forest text-2xl mt-1"></i><span>बाइबल हमें यीशु मसीह पर विश्वास करने और अपने जीवन को उनके हाथों में सौंपने के लिए बुलाती है।</span></p>
+                            <p class="flex gap-4 items-start"><i class="ph-fill ph-hands-praying text-forest text-2xl mt-1"></i><span>येशु को जानना केवल किसी धर्म के बारे में जानना नहीं है। यह परमेश्वर के साथ एक नया संबंध शुरू करना है।</span></p>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-forest">आज का निमंत्रण</h3>
+                        <p class="mb-6 text-forest/80">क्या आप यीशु को अपने जीवन में स्वीकार करना चाहते हैं? आपको कोई विशेष स्थान, विशेष परिस्थिति या विशेष योग्यता की आवश्यकता नहीं है। परमेश्वर के सामने अपने हृदय को खोलिए।</p>
+                        <ul class="flex flex-wrap gap-2 text-sm font-medium">
+                            <li class="bg-white/70 px-4 py-2 rounded-lg backdrop-blur-sm border border-white text-forest">यीशु से बात कीजिए</li>
+                            <li class="bg-white/70 px-4 py-2 rounded-lg backdrop-blur-sm border border-white text-forest">पापों को स्वीकार कीजिए</li>
+                            <li class="bg-white/70 px-4 py-2 rounded-lg backdrop-blur-sm border border-white text-forest">क्षमा माँगिए</li>
+                            <li class="bg-white/70 px-4 py-2 rounded-lg backdrop-blur-sm border border-white text-forest">विश्वास रखिए</li>
+                            <li class="bg-white/70 px-4 py-2 rounded-lg backdrop-blur-sm border border-white text-forest">जीवन समर्पित कीजिए</li>
+                        </ul>
+                    </div>
+                    <div class="glass-nav p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative" data-aos="fade-left">
+                        <div class="absolute -top-6 -right-6 w-24 h-24 bg-sage rounded-full opacity-30 blur-xl"></div>
+                        <h3 class="text-2xl font-bold mb-6 text-center text-forest">एक सरल प्रार्थना</h3>
+                        <div class="text-center text-forest/85 leading-relaxed space-y-4 font-serif italic text-lg">
+                            <p>“प्रभु यीशु,</p>
+                            <p>मैं स्वीकार करता हूँ कि मुझे आपकी आवश्यकता है।</p>
+                            <p>मेरे पापों को क्षमा करें।</p>
+                            <p>मेरे जीवन में आएँ और मुझे नया जीवन दें।</p>
+                            <p>मुझे सत्य के मार्ग पर चलाएँ।</p>
+                            <p>मुझे अपने प्रेम और अनुग्रह में बनाए रखें।</p>
+                            <p>मैं अपने जीवन को आपके हाथों में सौंपता हूँ।</p>
+                            <p class="font-bold not-italic mt-6 text-xl text-forest">आमेन।”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. BIBLE VERSES -->
+        <section id="verses" class="py-24 bg-cream">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-4 text-forest">बाइबल क्या कहती है?</h2>
+                    <p class="text-forest/60">परमेश्वर के वचन से कुछ संदेश</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border-l-4 border-mint border-y border-r border-sage/20" data-aos="fade-up" data-aos-delay="100">
+                        <span class="text-xs font-bold text-forest/60 uppercase tracking-wider mb-4 block">भय में</span>
+                        <p class="text-lg italic text-forest mb-4">“मत डर, क्योंकि मैं तेरे साथ हूँ।”</p>
+                        <p class="text-sm font-medium text-forest/60">— यशायाह 41:10</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border-l-4 border-beige border-y border-r border-sage/20" data-aos="fade-up" data-aos-delay="200">
+                        <span class="text-xs font-bold text-forest/60 uppercase tracking-wider mb-4 block">चिंता में</span>
+                        <p class="text-lg italic text-forest mb-4">“किसी भी बात की चिंता मत करो... अपनी प्रार्थनाएँ परमेश्वर के सामने प्रस्तुत करो।”</p>
+                        <p class="text-sm font-medium text-forest/60">— फिलिप्पियों 4:6–7</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border-l-4 border-sage border-y border-r border-sage/20" data-aos="fade-up" data-aos-delay="300">
+                        <span class="text-xs font-bold text-forest/60 uppercase tracking-wider mb-4 block">दुःख में</span>
+                        <p class="text-lg italic text-forest mb-4">“प्रभु टूटे मन वालों के निकट रहता है।”</p>
+                        <p class="text-sm font-medium text-forest/60">— भजन संहिता 34:18</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border-l-4 border-mint border-y border-r border-sage/20" data-aos="fade-up" data-aos-delay="400">
+                        <span class="text-xs font-bold text-forest/60 uppercase tracking-wider mb-4 block">अकेलेपन में</span>
+                        <p class="text-lg italic text-forest mb-4">“मैं तुम्हें कभी नहीं छोड़ूँगा और न कभी त्यागूँगा।”</p>
+                        <p class="text-sm font-medium text-forest/60">— इब्रानियों 13:5</p>
+                    </div>
+                    <div class="bg-forest text-white p-8 rounded-3xl shadow-md md:col-span-2 lg:col-span-2" data-aos="fade-up" data-aos-delay="500">
+                        <span class="text-xs font-bold text-mint uppercase tracking-wider mb-4 block">जीवन के मार्ग के लिए</span>
+                        <p class="text-2xl italic mb-4 font-serif">“मैं मार्ग, सत्य और जीवन हूँ।”</p>
+                        <p class="text-sm font-medium text-mint">— यूहन्ना 14:6</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. MESSAGE & 11. PRAYER REQUEST -->
+        <section id="prayer" class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="bg-cream rounded-[3rem] p-8 md:p-16 shadow-xl border border-sage/20 flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="flex-1" data-aos="fade-right">
+                        <span id="message" class="inline-block py-1 px-3 bg-white rounded-full text-xs font-bold text-forest mb-6 shadow-sm border border-sage/20">आपके लिए एक संदेश</span>
+                        <h2 class="text-3xl font-bold mb-6 text-forest">शायद आप इस समय किसी कठिन परिस्थिति से गुजर रहे हैं</h2>
+                        <p class="text-forest/70 mb-4">शायद आपके पास ऐसे प्रश्न हैं जिनका उत्तर आपको नहीं मिल रहा। शायद आप भय, चिंता, अकेलेपन, अपराधबोध या निराशा से जूझ रहे हैं।</p>
+                        <p class="text-xl font-bold text-forest mb-4">यीशु में आशा है।</p>
+                        <p class="text-forest/70 mb-6">आपकी कहानी चाहे जैसी भी रही हो, परमेश्वर के सामने एक नई शुरुआत संभव है। आप अकेले नहीं हैं।</p>
+                        <hr class="border-sage/30 my-8">
+                        <h3 class="text-2xl font-bold mb-2 text-forest">क्या आपके लिए प्रार्थना करें?</h3>
+                        <p class="text-forest/60 text-sm mb-6">हम मानते हैं कि परमेश्वर हमारी प्रार्थनाएँ सुनता है। आप अपने जीवन, परिवार, स्वास्थ्य, भविष्य, चिंता या किसी भी आवश्यकता के लिए प्रार्थना का अनुरोध भेज सकते हैं।</p>
+                    </div>
+                    <div class="w-full lg:w-96 glass p-8 rounded-3xl shadow-md border-white/80" data-aos="fade-left">
+                        <form id="prayerForm" class="flex flex-col gap-4">
+                            <div>
+                                <label for="prayerName" class="text-xs font-bold text-forest/60 mb-1 block uppercase tracking-wide">आपका नाम</label>
+                                <input id="prayerName" type="text" required class="w-full bg-white/60 border border-sage/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-forest focus:bg-white transition-all text-forest placeholder-forest/40" placeholder="नाम दर्ज करें">
+                            </div>
+                            <div>
+                                <label for="prayerRequest" class="text-xs font-bold text-forest/60 mb-1 block uppercase tracking-wide">प्रार्थना का अनुरोध</label>
+                                <textarea id="prayerRequest" rows="4" required class="w-full bg-white/60 border border-sage/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-forest focus:bg-white transition-all resize-none text-forest placeholder-forest/40" placeholder="आपकी प्रार्थना का विषय..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-forest text-white font-medium py-3 rounded-xl hover:bg-forest/90 transition-colors shadow-md mt-2 flex justify-center items-center gap-2">
+                                <i class="ph-bold ph-paper-plane-tilt"></i>
+                                प्रार्थना का अनुरोध भेजें
+                            </button>
+                            <p id="formMessage" class="text-sm text-center text-forest/80 hidden"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. FINAL CTA -->
+        <section class="py-24 bg-forest text-center relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 left-10 w-64 h-64 bg-mint rounded-full filter blur-3xl"></div>
+                <div class="absolute bottom-10 right-10 w-64 h-64 bg-beige rounded-full filter blur-3xl"></div>
+            </div>
+            <div class="container mx-auto px-6 max-w-3xl relative z-10" data-aos="zoom-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">आज ही जीवन के मार्ग को खोजिए</h2>
+                <p class="text-xl text-mint mb-10 font-light">यीशु मसीह आपको आमंत्रित करते हैं।</p>
+                <div class="flex flex-wrap justify-center gap-4 text-beige font-medium mb-12 text-lg">
+                    <span>जानिए।</span>
+                    <span class="opacity-50">•</span>
+                    <span>विश्वास कीजिए।</span>
+                    <span class="opacity-50">•</span>
+                    <span>प्रार्थना कीजिए।</span>
+                    <span class="opacity-50">•</span>
+                    <span>और परमेश्वर के साथ एक नया जीवन शुरू कीजिए।</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#about" class="bg-mint text-forest px-8 py-4 rounded-full font-medium hover:bg-white transition-all shadow-lg">यीशु के बारे में जानें</a>
+                    <a href="https://www.jayesu.com/HindiBible/mainpage.htm" class="bg-white/10 text-white border border-white/20 px-8 py-4 rounded-full font-medium hover:bg-white/20 transition-all backdrop-blur-sm">बाइबल पढ़ें</a>
+                    <a href="#prayer" class="bg-white/10 text-white border border-white/20 px-8 py-4 rounded-full font-medium hover:bg-white/20 transition-all backdrop-blur-sm">प्रार्थना करें</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- ==================== END PAGE CONTENT ==================== -->
+
+
+    <!-- ============ CURTAIN REVEAL FOOTER ============ -->
+    <footer id="curtainFooter" class="curtain-footer bg-cream border-t border-sage/20">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <div class="mb-8">
+                <a href="#top" class="text-2xl font-bold text-forest flex items-center justify-center gap-2 mb-4">
+                    <i class="ph-fill ph-dove text-sage"></i>
+                    Jeevan Marg | जीवन मार्ग
+                </a>
+                <p class="text-forest/60 max-w-md mx-auto text-sm">
+                    येशु मसीह के संदेश, बाइबल के वचन, प्रार्थना और विश्वास के माध्यम से आशा और जीवन का संदेश साझा करने का एक ऑनलाइन मंच।
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-medium text-forest/80 mb-8">
+                <a href="#verses" class="hover:text-forest transition-colors">बाइबल वचन</a>
+                <span class="text-sage">|</span>
+                <a href="#gospel" class="hover:text-forest transition-colors">सुसमाचार</a>
+                <span class="text-sage">|</span>
+                <a href="#prayer" class="hover:text-forest transition-colors">प्रार्थना</a>
+                <span class="text-sage">|</span>
+                <a href="#about" class="hover:text-forest transition-colors">विश्वास</a>
+                <span class="text-sage">|</span>
+                <a href="#message" class="hover:text-forest transition-colors">आशा</a>
+            </div>
+            <p class="text-xs text-forest/40">© <span id="year"></span> Jeevan Marg. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="ऊपर जाएँ">
+        <i class="ph-bold ph-arrow-up text-xl"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
